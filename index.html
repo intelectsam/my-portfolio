@@ -50,22 +50,26 @@
     </div>
   </section>
 
+  
   <!-- ===== CONTACT ===== -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <p id="form-status"></p>
-  </section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm" action="https://formspree.io/f/mwxyzabc" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="_replyto" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+  <p id="form-status"></p>
+</section>
+
 
   <footer>
     <p>© 2025 Sam | Built with 💻 & ❤️</p>
   </footer>
 
   <script src="script.js"></script>
+  <button id="themeToggle" class="theme-toggle">🌙 Dark Mode</button>
+
 </body>
 </html>
